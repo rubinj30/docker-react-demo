@@ -1,9 +1,8 @@
-# FROM mhart/alpine-node
-# FROM node:8-slim
-# FROM node:8-alpine
+FROM node:8-alpine
 
 COPY . .
 
+# RUN npm install
+RUN yarn install
 EXPOSE 3000
-
 CMD ["npm", "start"]
