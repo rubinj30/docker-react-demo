@@ -1,0 +1,12 @@
+
+/*
+    Place all buttons in a 4-column grid
+*/
+.calc-frame {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    max-width: 240px;
+    padding: 3px;
+    margin: 0 auto;
+}
