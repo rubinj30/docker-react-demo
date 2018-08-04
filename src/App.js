@@ -22,7 +22,7 @@ class App extends Component {
   applyInput(e){
     const val = e.target.innerText;
     this.setState({
-      input: this.state.input += val
+      input: this.state.input + val
     })
   }
 
@@ -42,7 +42,7 @@ class App extends Component {
   }
 
   calculateTotal(){
-    if(this.state.input.length==0){
+    if(this.state.input.length === 0){
       return;
     }
     try {
