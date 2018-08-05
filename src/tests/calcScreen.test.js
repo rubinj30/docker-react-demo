@@ -13,9 +13,9 @@ it('CalcScreen can render', () => {
 });
 
 it('CalcScreen can render with props', () => {
-    const div = document.createElement('div');
-    const randString = randomString();
-    const screen = <CalcScreen displayText={ randString }/>;
-    ReactDOM.render(screen, div);
-    ReactDOM.unmountComponentAtNode(div);
+  const div = document.createElement('div');
+  const randString = randomString();
+  const screen = <CalcScreen displayText={ randString }/>;
+  ReactDOM.render(screen, div);
+  ReactDOM.unmountComponentAtNode(div);
 });
